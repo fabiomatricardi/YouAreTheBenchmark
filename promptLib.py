@@ -268,7 +268,7 @@ Prompt Tokens: {prompttokens}
 Output Tokens: {assistanttokens}
 TOTAL Tokens: {totaltokens}
 >>>⏱️ Inference time:   {delta}
->>>🧮 Inference speed:  {speed:.3f}  t/s
+>>>🏍️ Inference speed:  {speed:.3f}  t/s
 >>>🏃‍♂️ Generation speed: {genspeed:.3f}  t/s
 >>>📝 Logfile:     {logfilename}
 >>>💚 User rating: {rating}
