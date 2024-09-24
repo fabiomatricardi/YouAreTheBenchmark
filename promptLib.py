@@ -11,7 +11,7 @@ def createCatalog():
     catalog = []
     prmpt_tasks = ["introduction",
                "explain in one sentence",
-               "explain in three paragrapghs",
+               "explain in three paragraphs",
                "summarize",
                "Summarize in two sentences",
                "Write in a list the three main key points -  format output",
@@ -246,3 +246,32 @@ def genRANstring(n):
     res = ''.join(random.choices(string.ascii_uppercase +
                                 string.digits, k=N))
     return res
+
+def createStats(delta,question,output,rating,logfilename,task):
+    """
+    Takes in all the generation main info and return KPIs
+    delta -> datetime.now() delta
+    question -> str the user input to the LLM
+    output -> str the generation from the LLM
+    rating -> str human eval feedback rating
+    logfilename -> str filepath/filename
+    task -> str description of the NLP task describing the prompt
+    """
+    totalseconds = delta.total_seconds()
+    prompttokens = countTokens(question)
+    assistanttokens = countTokens(output)
+    totaltokens = prompttokens + assistanttokens
+    speed = totaltokens/totalseconds
+    genspeed = assistanttokens/totalseconds
+    stats = f'''---
+Prompt Tokens: {prompttokens}
+Output Tokens: {assistanttokens}
+TOTAL Tokens: {totaltokens}
+>>>⏱️ Inference time:   {delta}
+>>>🧮 Inference speed:  {speed:.3f}  t/s
+>>>🏃‍♂️ Generation speed: {genspeed:.3f}  t/s
+>>>📝 Logfile:     {logfilename}
+>>>💚 User rating: {rating}
+>>>✅ NLP TAKS:    {task}
+'''
+    return stats

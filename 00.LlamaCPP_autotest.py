@@ -6,10 +6,8 @@ from time import sleep
 import warnings
 warnings.filterwarnings(action='ignore')
 import datetime
-from promptLib import createCatalog
-from promptLib import countTokens
-from promptLib import writehistory
-from promptLib import genRANstring
+from promptLib import countTokens, writehistory, createCatalog
+from promptLib import genRANstring, createStats
 import argparse
 
 #Add GPU argument in the parser
@@ -78,34 +76,17 @@ for chunk in llm.create_chat_completion(
     except:
         pass        
 delta = datetime.datetime.now() - start
-totalseconds = delta.total_seconds()
 output = full_response
-prompttokens = countTokens(question)
-assistanttokens = countTokens(output)
-totaltokens = prompttokens + assistanttokens
-speed = totaltokens/totalseconds
-genspeed = assistanttokens/totalseconds
 print('')
 print("\033[91;1m")
 rating = input('Rate from 0 (BAD) to 5 (VERY GOOD) the quality of generation> ')
 print("\033[92;1m")
-stats = f'''---
-Prompt Tokens: {prompttokens}
-Output Tokens: {assistanttokens}
-TOTAL Tokens: {totaltokens}
->>>⏱️Inference time: {delta}
->>>🧮Inference speed: {speed:.3f}  t/s
->>>🏃‍♂️Generation speed: {genspeed:.3f}  t/s
-📝Logfile: {logfilename}
->>>💚User rating: {rating}
-
-'''
+stats = createStats(delta,question,output,rating,logfilename,'Alignment Generation')
 print(stats)
-writehistory(logfilename,f'''✅NLP TAKS>>> INTRODUCTIONS AND GREETINGS
-👨‍💻: {question}
-💻 > {full_response}
+writehistory(logfilename,f'''👨‍💻 . {question}
+💻 > {output}
 {stats}
-📝Logfile: {logfilename}''')
+''')
 
 ############################# AUTOMATIC PROMPTING EVALUATION  11 TURNS #################################
 for items in tasks:
@@ -118,7 +99,7 @@ for items in tasks:
     test.append({"role": "user", "content": prompt})
     print("\033[92;1m")
     # Preparing Generation history pair
-    new_message = {"role": "assistant", "content": ""}
+    #new_message = {"role": "assistant", "content": ""}
     full_response = ""
     start = datetime.datetime.now()
     print("💻 > ", end="", flush=True)
@@ -135,32 +116,14 @@ for items in tasks:
                 full_response += chunk["choices"][0]["delta"]["content"]                              
         except:
             pass        
-    new_message["content"] = full_response
-    test.append(new_message)   
+    #new_message["content"] = full_response
+    #test.append(new_message)   
     delta = datetime.datetime.now() - start
-    totalseconds = delta.total_seconds()
-    output = full_response
-    prompttokens = countTokens(prompt)
-    assistanttokens = countTokens(output)
-    totaltokens = prompttokens + assistanttokens
-    speed = totaltokens/totalseconds
-    genspeed = assistanttokens/totalseconds
     print('')
     print("\033[91;1m")
     rating = input('Rate from 0 (BAD) to 5 (VERY GOOD) the quality of generation> ')
     print("\033[92;1m")
-    stats = f'''--- 
-Prompt Tokens: {prompttokens}
-Output Tokens: {assistanttokens}
-TOTAL Tokens: {totaltokens}
->>>⏱️Inference time: {delta}
->>>🧮Inference speed: {speed:.3f}  t/s
->>>🏃‍♂️Generation speed: {genspeed:.3f}  t/s
-📝Logfile: {logfilename}
->>>💚User rating: {rating}
-✅NLP TAKS>>> {task}
-
-'''
+    stats = createStats(delta,prompt,output,rating,logfilename,task)
     print(stats)
     writehistory(logfilename,f'''👨‍💻 > {prompt}
 💻 > {full_response}
