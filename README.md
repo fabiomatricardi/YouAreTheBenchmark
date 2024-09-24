@@ -29,6 +29,15 @@ FUNCTIONS
         'task'   : description of the NLP task in the prompt
         'prompt' : the instruction prompt for the LLM
 
+    createStats(delta, question, output, rating, logfilename, task)
+        Takes in all the generation main info and return KPIs
+        delta -> datetime.now() delta
+        question -> str the user input to the LLM
+        output -> str the generation from the LLM
+        rating -> str human eval feedback rating
+        logfilename -> str filepath/filename
+        task -> str description of the NLP task describing the prompt
+
     genRANstring(n)
         n = int number of char to randomize
 
