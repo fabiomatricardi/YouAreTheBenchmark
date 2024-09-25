@@ -1,7 +1,4 @@
-from promptLib import createCatalog
-from promptLib import countTokens
-from promptLib import writehistory
-from promptLib import genRANstring
+from promptLib import createCatalog, countTokens, writehistory, genRANstring
 from time import sleep
 
 print('1) Create a prompt catalog...')
