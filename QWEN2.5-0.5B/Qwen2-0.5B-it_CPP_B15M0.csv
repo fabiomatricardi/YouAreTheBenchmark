@@ -1,0 +1,15 @@
+#,TASK,VOTE,REMARKS
+0,introduction,5 ,good
+1,explain in one sentence,4 ,too short
+2,explain in three paragraphs,3 ,there are more than 3 paragraphs
+3,say 'I am ready',5,
+4,summarize,1 ,- there are invented information 'The author predicts that China will become a model nation by 2035'
+5,Summarize in two sentences,5,
+6,Write in a list the three main key points -  format output,0,
+7,Table of Contents,0,
+8,RAG,1 ,- there is invented information 'dioxide and greenhouse gas emissions by 2038.'
+9,Truthful RAG,5,
+10,write content from a reference,3 ,- there are 6 paragraphs
+11,extract 5 topics,4 ,- little formatting issues
+12,Creativity: 1000 words SF story,5,
+13,Reflection prompt,4,
