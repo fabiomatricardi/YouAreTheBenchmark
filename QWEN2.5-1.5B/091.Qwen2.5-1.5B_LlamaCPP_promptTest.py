@@ -30,8 +30,9 @@ stops = ['<|im_end|>']
 tasks = createCatalog()
 modelname = 'qwen2.5-1.5b-instruct-q5_k_m.gguf'
 # create THE LOG FILE 
-logfile = f'logs/Qwen2.5-1.5B-it_CPP_{genRANstring(5)}_log.txt'
-csvfile = f'logs/Qwen2.5-1.5B-it_CPP_{genRANstring(5)}.csv'
+coded5 = genRANstring(5)
+logfile = f'logs/Qwen2.5-1.5B-it_CPP_{coded5}_log.txt'
+csvfile = f'logs/Qwen2.5-1.5B-it_CPP_{coded5}.csv'
 logfilename = logfile
 #Write in the history the first 2 sessions
 writehistory(logfilename,f'{str(datetime.datetime.now())}\n\nYour own LocalGPT with 💻 {modelname}\n---\n🧠🫡: You are a helpful assistant.')    
