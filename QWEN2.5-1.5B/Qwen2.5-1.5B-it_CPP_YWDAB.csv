@@ -1,0 +1,15 @@
+#,TASK,VOTE,REMARKS
+1,introduction,4,
+2,explain in one sentence,5,
+3,explain in three paragraphs,5,
+4,say 'I am ready',5,
+5,summarize,5,
+6,Summarize in two sentences,1 ,- there are made up information like 'China aims at achieving peak carbon emissions by 2035' and it is 3 paragraphs
+7,Write in a list the three main key points -  format output,5,
+8,Table of Contents,5,
+9,RAG,5,
+10,Truthful RAG,5,
+11,write content from a reference,4 ,- there are some additional information that will require verification. but this is creative wring not rewriting
+12,extract 5 topics,5,
+13,Creativity: 1000 words SF story,0 ,- not ended generation with repeated text all over the place.
+14,Reflection prompt,3 ,- overall the process flow is compliant with the requests: but the open/closure of the tags is not consistent. You cannot use it to extract data in a structured way
