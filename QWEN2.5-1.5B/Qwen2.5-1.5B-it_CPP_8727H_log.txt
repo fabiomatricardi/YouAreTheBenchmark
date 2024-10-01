@@ -1,6 +1,0 @@
-2024-10-01 06:08:35.329991
-
-Your own LocalGPT with 💻 qwen2.5-1.5b-instruct-q5_k_m.gguf
----
-🧠🫡: You are a helpful assistant.
-💻: How can I assist you today in writing?
