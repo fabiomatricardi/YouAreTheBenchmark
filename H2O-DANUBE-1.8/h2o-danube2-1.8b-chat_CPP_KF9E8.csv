@@ -1,0 +1,15 @@
+#,TASK,VOTE,REMARKS
+1,introduction,5,
+2,explain in one sentence,5,
+3,explain in three paragraphs,3 , there are 4 paragraphs and they are not marked clearly in the output
+4,say 'I am ready',3 ," the user intent is understood and replied, but there is some more not requested information"
+5,summarize,2 ,"although the summary is well done there are made up information like 'China's capacity for strategic environmental management and plans towards reducing carbon dioxide emissions by 65% from their peak levels,'"
+6,Summarize in two sentences,5,
+7,Write in a list the three main key points -  format output,3 ,"it is a python list, for the format mistakes a proper fine tuning of the prompt can fix it"
+8,Table of Contents,3 ,there are mentions of sections and chapters... some fine tune of the prompt instruction can fix it
+9,RAG,5,
+10,Truthful RAG,5,
+11,write content from a reference,2 ,"some prompt tuning can fix the repetitions and the structure, because the genartion is not an essay but an outline of the essay"
+12,extract 5 topics,3 ,there are only 3 topics
+13,Creativity: 1000 words SF story,3 ,"the story is flowing but not coherent with the names, "
+14,Reflection prompt,4 ,"overall good structure and coherence, even though the requested tags are not included"
