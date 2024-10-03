@@ -1,0 +1,15 @@
+#,TASK,VOTE,REMARKS
+1,introduction,5,
+2,explain in one sentence,3 ,there are 2 sentences
+3,explain in three paragraphs,3 ,there are 5 paragraphs
+4,say 'I am ready',5,
+5,summarize,5 ,very good
+6,Summarize in two sentences,5,
+7,Write in a list the three main key points -  format output,3 ,but there is a continuation not fully compliant with the prompt. a little of fine tuning prompt engineering may be able to fix it
+8,Table of Contents,4 ,it is good but a little too short
+9,RAG,5 ,always well mentioned when data are not retrieved from the context but from common known information
+10,Truthful RAG,0 ,"out of context, out of the user intent and some made up information"
+11,write content from a reference,3 ,there are 6 paragraphs
+12,extract 5 topics,3 ,there are only 4 points
+13,Creativity: 1000 words SF story,4 ,"coherent, followed the prompt instruction, but the lenght is not even 800"
+14,Reflection prompt,4 ,"there are some mistakes in opening/closing tags, but the overall process is followed and maintained. The output is coherent too."
