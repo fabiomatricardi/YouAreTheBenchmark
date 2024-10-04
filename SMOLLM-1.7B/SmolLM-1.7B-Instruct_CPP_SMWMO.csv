@@ -1,0 +1,15 @@
+#,TASK,VOTE,REMARKS
+1,introduction,2,
+2,explain in one sentence,5,
+3,explain in three paragraphs,3 ,it is only 2 paragraphs
+4,say 'I am ready',1,
+5,summarize,2 ,there are some made up information
+6,Summarize in two sentences,1 ,there are more than 2 sentences and some made up information not coming from the context
+7,Write in a list the three main key points -  format output,0,
+8,Table of Contents,1,
+9,RAG,1,
+10,Truthful RAG,0,
+11,write content from a reference,5,
+12,extract 5 topics,2 ,it is 5 pointsin a list but there are too many unrequested opinions not coming from the context
+13,Creativity: 1000 words SF story,1 ,user intent not understood
+14,Reflection prompt,1 ,user intent non considered but 
