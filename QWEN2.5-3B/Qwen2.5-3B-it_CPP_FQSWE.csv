@@ -1,0 +1,15 @@
+#,TASK,VOTE,REMARKS
+1,introduction,5,
+2,explain in one sentence,5,
+3,explain in three paragraphs,3 ,there are 4 paragraphs
+4,say 'I am ready',5,
+5,summarize,5,
+6,Summarize in two sentences,5,
+7,Write in a list the three main key points -  format output,5,
+8,Table of Contents,5,
+9,RAG,4 ,some imprecisions 'China achieved achieving'
+10,Truthful RAG,4 ,"- some more text, as non requested explanation, "
+11,write content from a reference,5,
+12,extract 5 topics,4 ,"maybe a little too judgy, but considering the tone of the article it is not more biased"
+13,Creativity: 1000 words SF story,2 ,"there are too many repetitions, in this case we should try higher temperature and a higher repetition penallty"
+14,Reflection prompt,5 ,"so far the best REFLECTION output, even better than GEMMA2-2B. Here there is a double thinking, coming after the first reflection!"
