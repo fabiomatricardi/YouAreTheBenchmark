@@ -1,0 +1,15 @@
+#,TASK,VOTE,REMARKS
+1,introduction,5 ,"even without asystem prompt given, the AI is impersonating Olivia by OpenAI... training datasets really sucks"
+2,explain in one sentence,5,
+3,explain in three paragraphs,4 ,"there are 4 paragraphs, but instead of 3 I give 4 because there is no RECAP, and this is a good thing"
+4,say 'I am ready',5,
+5,summarize,5,
+6,Summarize in two sentences,3 ,there are more than 2 sentences
+7,Write in a list the three main key points -  format output,5,
+8,Table of Contents,5 ,the idea of referencing with the lines is creative
+9,RAG,5,
+10,Truthful RAG,1 ,completely out of user intent
+11,write content from a reference,5,
+12,extract 5 topics,3t,here are only 3
+13,Creativity: 1000 words SF story,5,
+14,Reflection prompt,5 ,"even though the entire process doesn't look like the original REFLECTION, the model is thiNKING during the steps. And creating the output in the process. there are some </a> tags on the way."
