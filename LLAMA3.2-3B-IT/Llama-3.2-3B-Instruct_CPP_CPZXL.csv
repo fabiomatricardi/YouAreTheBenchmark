@@ -1,0 +1,15 @@
+#,TASK,VOTE,REMARKS
+1,introduction,5,
+2,explain in one sentence,5,
+3,explain in three paragraphs,5,
+4,say 'I am ready',5,
+5,summarize,5,
+6,Summarize in two sentences,5,
+7,Write in a list the three main key points -  format output,5,
+8,Table of Contents,5,
+9,RAG,5,
+10,Truthful RAG,5,
+11,write content from a reference,5,"there is also not so many biases, regardless the text"
+12,extract 5 topics,5,
+13,Creativity: 1000 words SF story,5,"- it is coherent, it is almost 650 words, so near the target"
+14,Reflection prompt,4,it is a good reflection output. But theopenin/closure of tags still quite not coherent $output instad of <output>. But quite good
