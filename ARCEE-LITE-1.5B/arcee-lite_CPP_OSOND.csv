@@ -1,0 +1,15 @@
+#,TASK,VOTE,REMARKS
+1,introduction,5,
+2,explain in one sentence,5,
+3,explain in three paragraphs,3 ,there are 5 paragraphs
+4,say 'I am ready',5,
+5,summarize,5,
+6,Summarize in two sentences,3 ,there are more than 2 sentences
+7,Write in a list the three main key points -  format output,5,
+8,Table of Contents,5,
+9,RAG,5,
+10,Truthful RAG,3 ,"user intent satisfied, the format is not as expected but still can be used in a pipeline"
+11,write content from a reference,3 ,"there are less than 5 paragraphs and the essaay is poor. user intent understood, though"
+12,extract 5 topics,4 ,additional comments not required
+13,Creativity: 1000 words SF story,4 ,"there are 570 words, the text is coehernt and consistent with the user intent"
+14,Reflection prompt,5 ,"well formatted, coherent, and opening/closure of tags isok"
