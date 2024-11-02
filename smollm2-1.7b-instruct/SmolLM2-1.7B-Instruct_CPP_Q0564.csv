@@ -1,0 +1,15 @@
+#,TASK,VOTE,REMARKS
+1,introduction,5,good self intruction
+2,explain in one sentence,5,
+3,explain in three paragraphs,4,for some reasons the fullstop punctuation at end ofparagraphs are missing
+4,say 'I am ready',5,
+5,summarize,4,there are few biases
+6,Summarize in two sentences,5,I had to change the prompt and switch to numbers instead of words for "2" not two
+7,Write in a list the three main key points -  format output,5,good one. I had to change the prompt and remove the examples
+8,Table of Contents,4,"a part from the last paragraphs, the ToC is quite good"
+9,RAG,5,
+10,Truthful RAG,5,
+11,write content from a reference,5,"nice starting point, with some facts to be verifed"
+12,extract 5 topics,5,good. I had to change the prompt and switch from 'five' to 5
+13,Creativity: 1000 words SF story,5,"good one, with some fix are ok. generation stopped at 865 words, good on target, only for context lenght reasons"
+14,Reflection prompt,5,"with also multi hop thinking/reasoning. The output is consistent with the process. there are some closere tag not always 100% accurate, and the generation stoped becasuse of max_tokens limit"
