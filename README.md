@@ -7,6 +7,32 @@ Personal Catalog of prompt templates for NLP tasks
 - run a GGUF model with llama-cpp-python
 - go thrugh all the NLP tasks
 
+## QUALITATIVE MATRIX
+Qualitative Matrix to be applied by the Human (YOU)
+```
+0 - Gibberish
+1 - Bad generation quality
+   - User intent not considered
+   - output format not good
+   - made up information.
+2 - Sufficient generation quality
+   - User intent considered
+   - output format not good
+   - barely coherent.
+3 - Acceptable generation quality.
+   - Instruction followed with some mistakes
+   - output format not fully compliant
+   - reply content acceptable
+4 - Average generation quality
+   - Instruction followed
+   - output format acceptable, min mistakes
+   - reply content accurate
+5 - Perfect generation quality.
+   - Instruction followed
+   - output format compliant
+   - reply content accurate
+```
+
 ## A python file with prompt catalog and supporting functions
 > credit to [stackOverflow](https://stackoverflow.com/questions/139180/how-to-list-all-functions-in-a-module) to print the Classes and Methods
 ```
