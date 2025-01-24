@@ -1,6 +1,8 @@
 # testing DeepSeek R1 Distill Qwen 1.5B quantized with my RBYF
 Using my prompt catalog to verify the performances of the DeepSeek R1 model, the smallest one.
 
+<img src='https://github.com/fabiomatricardi/YouAreTheBenchmark/raw/main/DeepSeek%20R1%20Distill%20Qwen%201.5B/DeepSeek-R1-Qwen1.5b_CPP_GMMMY_table_eval.jpg' width=900>
+
 ### technology stack
 Run the model with llama.cpp binaries, Vulkan flavour
 
